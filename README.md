@@ -1,4 +1,4 @@
-Quip
+Quip with ratings
 ====
 
-A commenting component for MODx Revolution
+A clone of commenting component for MODx Revolution with added rating fields for my project
