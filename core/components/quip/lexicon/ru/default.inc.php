@@ -92,6 +92,7 @@ $_lang['quip.post'] = 'Post';
 $_lang['quip.posted'] = 'Опубликован';
 $_lang['quip.postedon'] = 'Опубликован';
 $_lang['quip.preview'] = 'Просмотр';
+$_lang['quip.rating'] = 'Рейтинг';
 $_lang['quip.recaptcha_err_load'] = 'Невозможно загрузить класс сервиса reCaptcha.';
 $_lang['quip.reply'] = 'Ответить';
 $_lang['quip.remove'] = 'Удалить';
@@ -131,6 +132,9 @@ $_lang['quip.username_said'] = '<strong>[[+username]]</strong> сказал:';
 $_lang['quip.view'] = 'Просмотр';
 $_lang['quip.website'] = 'Вебсайт';
 
+$_lang['quip.profrate'] = 'Профессионализм';
+$_lang['quip.assortrate'] = 'Ассортимент';
+$_lang['quip.deliveryrate'] = 'Доставка';
 
 $_lang['setting_quip.allowedTags'] = 'Разрешённые теги';
 $_lang['setting_quip.allowedTags_desc'] = 'Теги которые разрешены в комментариях. Список допустимых значений <a target="_blank" href="http://php.net/strip_tags">php.net/strip_tags</a> .';

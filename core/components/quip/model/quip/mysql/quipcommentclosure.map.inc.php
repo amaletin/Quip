@@ -27,7 +27,13 @@
  */
 $xpdo_meta_map['quipCommentClosure']= array (
   'package' => 'quip',
+  'version' => NULL,
   'table' => 'quip_comments_closure',
+  'extends' => 'xPDOObject',
+  'tableMeta' => 
+  array (
+    'engine' => 'MyISAM',
+  ),
   'fields' => 
   array (
     'ancestor' => 0,

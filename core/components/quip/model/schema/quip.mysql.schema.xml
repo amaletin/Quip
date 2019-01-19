@@ -60,6 +60,10 @@
         <field key="deletedon" dbtype="datetime" phptype="datetime" null="true" />
         <field key="deletedby" dbtype="integer" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" index="index" />
 
+        <field key="profrate" dbtype="integer" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="assortrate" dbtype="integer" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+        <field key="deliveryrate" dbtype="integer" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" />
+
         <!-- deprecated in 0.5.0 -->
         <field key="resource" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0" index="index" />
         <field key="idprefix" dbtype="varchar" precision="255" phptype="string" null="false" default="qcom" />

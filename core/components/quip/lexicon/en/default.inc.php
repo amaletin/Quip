@@ -105,6 +105,7 @@ $_lang['quip.post'] = 'Post';
 $_lang['quip.posted'] = 'Posted';
 $_lang['quip.postedon'] = 'Posted On';
 $_lang['quip.preview'] = 'Preview';
+$_lang['quip.rating'] = 'Rating';
 $_lang['quip.recaptcha_err_load'] = 'Could not load reCaptcha service class.';
 $_lang['quip.reply'] = 'Reply';
 $_lang['quip.remove'] = 'Remove';
@@ -154,6 +155,10 @@ $_lang['quip.unsubscribed'] = 'You have been unsubscribed from this Thread. Than
 $_lang['quip.username_said'] = '<strong>[[+username]]</strong> said:';
 $_lang['quip.view'] = 'View';
 $_lang['quip.website'] = 'Website';
+
+$_lang['quip.profrate'] = 'Competence';
+$_lang['quip.assortrate'] = 'Assortment';
+$_lang['quip.deliveryrate'] = 'Delivery';
 
 $_lang['area_tags'] = 'Tags';
 $_lang['setting_quip.allowed_tags'] = 'Allowed Tags';

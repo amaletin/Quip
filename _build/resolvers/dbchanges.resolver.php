@@ -44,6 +44,10 @@ if ($object->xpdo) {
             $manager->addField('quipComment','email');
             $manager->addField('quipComment','website');
 
+            $manager->addField('quipComment','profrate');
+            $manager->addField('quipComment','assortrate');
+            $manager->addField('quipComment','deliveryrate');
+
             /* alter approved field */
             $manager->alterField('quipComment','approved');
 

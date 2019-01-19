@@ -189,6 +189,10 @@ class QuipThreadReplyController extends QuipController {
         $fields['email']   = strip_tags($fields['email']);
         $fields['website'] = strip_tags($fields['website']);
 
+        $fields['profrate'] = strip_tags($fields['profrate']);
+        $fields['assortrate'] = strip_tags($fields['assortrate']);
+        $fields['deliveryrate'] = strip_tags($fields['deliveryrate']);
+
         /* prefill fields */
         $profile = $this->modx->user->getOne('Profile');
         if ($profile) {
@@ -248,6 +252,11 @@ class QuipThreadReplyController extends QuipController {
         $fields['name'] = strip_tags($fields['name']);
         $fields['email'] = strip_tags($fields['email']);
         $fields['website'] = strip_tags($fields['website']);
+
+        $fields['profrate'] = strip_tags($fields['profrate']);
+        $fields['assortrate'] = strip_tags($fields['assortrate']);
+        $fields['deliveryrate'] = strip_tags($fields['deliveryrate']);
+        
         if (isset($fields['parent'])) $fields['parent'] = $this->modx->sanitizeString($fields['parent']);
         if (isset($fields['thread'])) $fields['thread'] = $this->modx->sanitizeString($fields['thread']);
 

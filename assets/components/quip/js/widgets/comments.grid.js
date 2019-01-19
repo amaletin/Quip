@@ -10,7 +10,7 @@ Quip.grid.Comments = function(config) {
             ,thread: config.thread || null
             ,family: config.family || null
         }
-        ,fields: ['id','author','username','body','createdon','name','approved','deleted','ip','url','pagetitle','comments','website','email','cls']
+        ,fields: ['id','author','username','body','createdon','name','approved','deleted','ip','url','pagetitle','comments','website','profrate','assortrate','deliveryrate','email','cls']
         ,paging: true
         ,autosave: false
         ,remoteSort: true
@@ -20,8 +20,14 @@ Quip.grid.Comments = function(config) {
             header: _('quip.comment')
             ,dataIndex: 'username'
             ,sortable: false
-            ,width: 400
+            ,width: 300
             ,renderer: this.renderAuthor
+        },{
+            header: _('quip.rating')
+            ,dataIndex: 'profrate'
+            ,sortable: false
+            ,width: 100
+            ,renderer: this._renderRating
         },{
             header: _('quip.posted')
             ,dataIndex: 'createdon'
@@ -131,6 +137,13 @@ Ext.extend(Quip.grid.Comments,MODx.grid.Grid,{
         );
 
         return value;
+    }
+    ,_renderRating: function(value,p, rec){
+        var rateContent = '<div>';
+        rateContent += '<span><b>Профессионализм:</b> ' + rec.data.profrate + '</span><br />';
+        rateContent += '<span><b>Ассортимент:</b> ' + rec.data.assortrate + '</span><br />';
+        rateContent += '<span><b>Доставка:</b> ' + rec.data.deliveryrate + '</span><br /></div>';
+        return rateContent;
     }
     ,_renderUrl: function(v,md,rec) {
         return '<a href="'+rec.data.url+'" target="_blank">'+rec.data.pagetitle+'</a><br /><i>'+rec.data.comments+' '+_('quip.comments')+'</i>';
@@ -456,6 +469,21 @@ Quip.window.UpdateComment = function(config) {
             xtype: 'textfield'
             ,fieldLabel: _('quip.website')
             ,name: 'website'
+            ,anchor: '90%'        
+        },{
+            xtype: 'textfield'
+            ,fieldLabel: _('quip.profrate')
+            ,name: 'profrate'
+            ,anchor: '90%'        
+        },{
+            xtype: 'textfield'
+            ,fieldLabel: _('quip.assortrate')
+            ,name: 'assortrate'
+            ,anchor: '90%'        
+        },{
+            xtype: 'textfield'
+            ,fieldLabel: _('quip.deliveryrate')
+            ,name: 'deliveryrate'
             ,anchor: '90%'        
         },{
             xtype: 'statictextfield'

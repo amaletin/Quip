@@ -28,6 +28,24 @@
     </div>
 
     <div class="quip-fld">
+        <label for="quip-comment-profrate-[[+idprefix]]">[[%quip.profrate]]:<span class="quip-error">[[+error.profrate]]</span></label>
+        <input type="text" name="profrate" id="quip-comment-profrate-[[+idprefix]]" value="[[+profrate]]" />
+        <br />
+    </div>
+    
+    <div class="quip-fld">
+        <label for="quip-comment-assortrate-[[+idprefix]]">[[%quip.assortrate]]:<span class="quip-error">[[+error.assortrate]]</span></label>
+        <input type="text" name="assortrate" id="quip-comment-assortrate-[[+idprefix]]" value="[[+assortrate]]" />
+        <br />
+    </div>
+    
+    <div class="quip-fld">
+        <label for="quip-comment-deliveryrate-[[+idprefix]]">[[%quip.deliveryrate]]:<span class="quip-error">[[+error.deliveryrate]]</span></label>
+        <input type="text" name="deliveryrate" id="quip-comment-deliveryrate-[[+idprefix]]" value="[[+deliveryrate]]" />
+        <br />
+    </div>
+
+    <div class="quip-fld">
         [[+unsubscribe:default=`
         <label for="quip-comment-notify-[[+idprefix]]">[[%quip.notify_me]]:<span class="quip-error">[[+error.notify]]</span></label>
         <input type="checkbox" value="1" name="notify" id="quip-comment-notify-[[+idprefix]]" [[+notifyChecked]] />

@@ -27,7 +27,13 @@
  */
 $xpdo_meta_map['quipThread']= array (
   'package' => 'quip',
+  'version' => NULL,
   'table' => 'quip_threads',
+  'extends' => 'xPDOObject',
+  'tableMeta' => 
+  array (
+    'engine' => 'MyISAM',
+  ),
   'fields' => 
   array (
     'name' => '',
@@ -194,17 +200,6 @@ $xpdo_meta_map['quipThread']= array (
       ),
     ),
   ),
-  'aggregates' => 
-  array (
-    'Resource' => 
-    array (
-      'class' => 'modResource',
-      'local' => 'resource',
-      'foreign' => 'id',
-      'cardinality' => 'one',
-      'owner' => 'foreign',
-    ),
-  ),
   'composites' => 
   array (
     'Comments' => 
@@ -222,6 +217,17 @@ $xpdo_meta_map['quipThread']= array (
       'foreign' => 'thread',
       'cardinality' => 'many',
       'owner' => 'local',
+    ),
+  ),
+  'aggregates' => 
+  array (
+    'Resource' => 
+    array (
+      'class' => 'modResource',
+      'local' => 'resource',
+      'foreign' => 'id',
+      'cardinality' => 'one',
+      'owner' => 'foreign',
     ),
   ),
 );

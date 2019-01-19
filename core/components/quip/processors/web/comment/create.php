@@ -118,6 +118,10 @@ $comment->fromArray($fields);
 $comment->set('ip',$_SERVER['REMOTE_ADDR']);
 $comment->set('createdon',strftime('%b %d, %Y at %I:%M %p',time()));
 $comment->set('body',$fields['body']);
+$comment->set('profrate',$fields['profrate']);
+$comment->set('assortrate',$fields['assortrate']);
+$comment->set('deliveryrate',$fields['deliveryrate']);
+
 
 /* if moderation is on, don't auto-approve comments */
 if ($this->getProperty('moderate',false,'isset')) {
